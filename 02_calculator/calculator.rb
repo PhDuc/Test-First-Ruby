@@ -39,7 +39,7 @@ def factorial(num)
   end
   result
 
-  #Second way
+  # #Second way
   # list = (1.."#{num}".to_i).to_a
   # list.each do |i|
   # result *= i
