@@ -33,10 +33,17 @@ end
 
 def factorial(num)
   result = 1
-  count = 1
-  while (count <= num) do
-    result *= count
-    count += 1
+  First way
+  "#{num}".to_i.times do |i|
+    result *= (i+1)
   end
-  return result
+  result
+
+  #Second way
+  # list = (1.."#{num}".to_i).to_a
+  # list.each do |i|
+  # result *= i
+  # end
+  # result
+
 end
