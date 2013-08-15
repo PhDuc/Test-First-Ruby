@@ -33,7 +33,7 @@ end
 
 def factorial(num)
   result = 1
-  First way
+  #First way
   "#{num}".to_i.times do |i|
     result *= (i+1)
   end
