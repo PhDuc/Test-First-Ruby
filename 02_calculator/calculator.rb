@@ -34,13 +34,13 @@ end
 def factorial(num)
   result = 1
   #First way
-  "#{num}".to_i.times do |i|
+  num.times do |i|
     result *= (i+1)
   end
   result
 
   # #Second way
-  # list = (1.."#{num}".to_i).to_a
+  # list = (1..num).to_a
   # list.each do |i|
   # result *= i
   # end
