@@ -1,15 +1,14 @@
 def translate (string)
   array = string.split(" ")
   array.each do |word|
-    index = 0
     temp = ""
-    until ['a','e','i','o','u'].include?(word[index]) do
-      if (index < word.length-1 && word[index]=='q' && word[index+1]=='u') #special case 'qu'
-        temp << word[index,index+2]
-        word[index,index+2]=''
+    until ['a','e','i','o','u'].include?(word[0]) do
+      if (0 < word.length-1 && word[0]=='q' && word[1]=='u') #special case 'qu'
+        temp << word[0,2]
+        word[0,2]=''
       else
-        temp << word[index]
-        word[index] = ''
+        temp << word[0]
+        word[0] = ''
       end
     end
     word << temp + "ay"
